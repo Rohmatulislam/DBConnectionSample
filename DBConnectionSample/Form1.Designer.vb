@@ -25,6 +25,7 @@ Partial Class Form1
         Me.btn_add = New System.Windows.Forms.Button()
         Me.dgv_sample = New System.Windows.Forms.DataGridView()
         Me.btn_hapus = New System.Windows.Forms.Button()
+        Me.btn_update = New System.Windows.Forms.Button()
         CType(Me.dgv_sample, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -56,11 +57,21 @@ Partial Class Form1
         Me.btn_hapus.Text = "Hapus Data"
         Me.btn_hapus.UseVisualStyleBackColor = True
         '
+        'btn_update
+        '
+        Me.btn_update.Location = New System.Drawing.Point(436, 46)
+        Me.btn_update.Name = "btn_update"
+        Me.btn_update.Size = New System.Drawing.Size(165, 55)
+        Me.btn_update.TabIndex = 3
+        Me.btn_update.Text = "Update Data"
+        Me.btn_update.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(888, 681)
+        Me.Controls.Add(Me.btn_update)
         Me.Controls.Add(Me.btn_hapus)
         Me.Controls.Add(Me.dgv_sample)
         Me.Controls.Add(Me.btn_add)
@@ -74,4 +85,5 @@ Partial Class Form1
     Friend WithEvents btn_add As Button
     Friend WithEvents dgv_sample As DataGridView
     Friend WithEvents btn_hapus As Button
+    Friend WithEvents btn_update As Button
 End Class
