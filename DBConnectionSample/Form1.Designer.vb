@@ -24,6 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.btn_add = New System.Windows.Forms.Button()
         Me.dgv_sample = New System.Windows.Forms.DataGridView()
+        Me.btn_hapus = New System.Windows.Forms.Button()
         CType(Me.dgv_sample, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -46,11 +47,21 @@ Partial Class Form1
         Me.dgv_sample.Size = New System.Drawing.Size(843, 524)
         Me.dgv_sample.TabIndex = 1
         '
+        'btn_hapus
+        '
+        Me.btn_hapus.Location = New System.Drawing.Point(241, 46)
+        Me.btn_hapus.Name = "btn_hapus"
+        Me.btn_hapus.Size = New System.Drawing.Size(165, 55)
+        Me.btn_hapus.TabIndex = 2
+        Me.btn_hapus.Text = "Hapus Data"
+        Me.btn_hapus.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(888, 681)
+        Me.Controls.Add(Me.btn_hapus)
         Me.Controls.Add(Me.dgv_sample)
         Me.Controls.Add(Me.btn_add)
         Me.Name = "Form1"
@@ -62,4 +73,5 @@ Partial Class Form1
 
     Friend WithEvents btn_add As Button
     Friend WithEvents dgv_sample As DataGridView
+    Friend WithEvents btn_hapus As Button
 End Class

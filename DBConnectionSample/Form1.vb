@@ -33,4 +33,12 @@ Public Class Form1
         DBConnectionModule.CloseConnection()
         ReloadData()
     End Sub
+
+    Private Sub btn_hapus_Click(sender As Object, e As EventArgs) Handles btn_hapus.Click
+        DBConnectionModule.OpenConnection()
+        Dim command = New MySqlCommand("DELETE from tabel_login where id_login = 3", DBConnectionModule.CONN)
+        command.ExecuteNonQuery()
+        DBConnectionModule.CloseConnection()
+        ReloadData()
+    End Sub
 End Class
